@@ -31,8 +31,6 @@ export default async function Search({ searchParams }: SearchProps) {
 
   const products = await searchProducts(query)
 
-  console.log('Inside of search ', products)
-
   return (
     <div className="flex flex-col gap-4">
       <p className="text-sm">
